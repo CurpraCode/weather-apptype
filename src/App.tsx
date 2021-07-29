@@ -1,12 +1,12 @@
-import React, {FC} from 'react'
+import { FC } from 'react';
+import WeatherPage from "./pages/WeatherPage"
 
 const App: FC = () => {
-  return (
-    <div>
-      <h1>This weather app with redux and typescript</h1>
-    </div>
-  )
+      
+    return (
+        <div>
+          <WeatherPage/> 
+        </div>
+    )
 }
-
-export default App
-
+export default App;
