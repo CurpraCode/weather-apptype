@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { WeatherState, WeatherAction, GET_WEATHER, SET_LOADING, SET_ERROR } from "../types";
 
 const initialState: WeatherState = {

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { AlertState, AlertAction, SET_ALERT } from "../types";
 
 const initialState: AlertState = {
