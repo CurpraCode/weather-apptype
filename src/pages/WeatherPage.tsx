@@ -5,6 +5,8 @@ import Search from "../components/Search";
 import Alert from "../components/Alert";
 import Weather from "../components/Weather";
 import {Spinner} from "@chakra-ui/react";
+import Header from "../components/Header";
+import {Box} from "@chakra-ui/react";
 // import {setAlert} from "../store/actions/alertActions";
 // import { setError } from '../store/actions/weatherActions';
 
@@ -15,15 +17,16 @@ const WeatherPage: FC = () => {
     const error = useSelector((state: RootState)=> state.weather.error)
     const alertMsg = useSelector((state: RootState)=>state.alert.message)
     return (
-        <div>
-            <div className="has-text-centered">
-      <Search title="Enter city name and press search button" />
+        <Box>
+                 <Header/>
+            <Box mt="3rem">
+      <Search title="Enter Region name and press search button" />
       {loading ? <Spinner color="red.500" /> : weatherData && <Weather data={weatherData} />}
 
       {alertMsg && <Alert message={alertMsg} />}
       {error && <Alert message={error}  />}
-    </div>
-        </div>
+    </Box>
+        </Box>
     )
 }
 export default WeatherPage;

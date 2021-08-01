@@ -2,7 +2,8 @@ import {FC, useState, FormEvent} from 'react';
 import {useDispatch} from "react-redux";
 import {setAlert} from "../store/actions/alertActions";
 import { getWeather, setLoading } from '../store/actions/weatherActions';
-import {Input, Text, Button} from "@chakra-ui/react";
+import {Input, Text, IconButton, Box} from "@chakra-ui/react";
+import {SearchIcon} from "@chakra-ui/icons";
 interface SearchProps{
     title: string;
 }
@@ -23,28 +24,26 @@ const Search: FC<SearchProps> = ({title}) => {
          setCity("");
      }
     return (
-        <div>
-            <div>
+        <Box>
+            <Box textAlign="center">
                 <Text>{title}</Text>
                 <form onSubmit={submitHandler}>
-<Input type="text" placeholder="Enter City" mb="2rem"   _focus={{
+<Input type="text" placeholder="Enter Region" mb="2rem" width="40%"  _focus={{
                       outline: "none",
                     }} onChange={changeHandler} value={city} />
-<Button  size="md"
-                    mt="0.5rem"
-                    height="48px"
-                    width="100%"
-                    border="0px"
+<IconButton  size="md"
+aria-label="Search database"
+                    border="0px"                    
                     color="white"
-                    bg="#fde8f4"
-                    _hover={{ bg: "rgba(253, 232, 244)" }}
+                    icon={<SearchIcon/>}
+                    bg="#f3f"
+                    _hover={{ bg: "#f3f" }}
                     _focus={{
                       outline: "none",
-                    }} type="submit">Search</Button>
+                    }} type="submit"/>
                 </form>
-            </div>
-        </div>
+            </Box>
+        </Box>
     )
 }
-
 export default Search

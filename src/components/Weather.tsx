@@ -1,5 +1,6 @@
-import React, {FC} from 'react';
+import {FC} from 'react';
 import {WeatherData} from "../store/types";
+import {Box , Flex, Image, Text} from "@chakra-ui/react";
 
 interface WeatherProps{
     data: WeatherData;
@@ -9,16 +10,17 @@ const Weather: FC<WeatherProps> = ({data}) => {
     const fahrenheit = (data.main.temp * 1.8 - 459.67).toFixed(2);
     const celsius = (data.main.temp - 273.15).toFixed(2);
     return (
-        <div>
+        <Box>
             <div className="container">
-        <h1 className="title has-text-centered" style={{marginBottom: 50}}>{data.name} - {data.sys.country}</h1>
+        <Text textAlign="center" >{data.name} - {data.sys.country}</Text>
         <div className="level" style={{alignItems: 'flex-start'}}>
           <div className="level-item has-text-centered">
-            <div>
+            <Box textAlign="center">
               <p className="heading">{data.weather[0].description}</p>
-              <p className="title"><img src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} alt=""/></p>
-            </div>
+              <Image  src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} alt=""/>
+            </Box>
           </div>
+          <Flex justifyContent="center" alignItems="center" > 
           <div className="level-item has-text-centered">
             <div>
               <p className="heading">temp</p>
@@ -47,9 +49,10 @@ const Weather: FC<WeatherProps> = ({data}) => {
               <p className="title">{data.wind.speed} m/s</p>
             </div>
           </div>
+          </Flex>
         </div>
       </div>
-        </div>
+        </Box>
     )
 }
 
