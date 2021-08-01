@@ -2,6 +2,7 @@ import {FC, useState, FormEvent} from 'react';
 import {useDispatch} from "react-redux";
 import {setAlert} from "../store/actions/alertActions";
 import { getWeather, setLoading } from '../store/actions/weatherActions';
+import {Input, Text, Button} from "@chakra-ui/react";
 interface SearchProps{
     title: string;
 }
@@ -24,10 +25,22 @@ const Search: FC<SearchProps> = ({title}) => {
     return (
         <div>
             <div>
-                <h1>{title}</h1>
+                <Text>{title}</Text>
                 <form onSubmit={submitHandler}>
-<input type="text" placeholder="Enter City" onChange={changeHandler} value={city} />
-<button type="submit">Search</button>
+<Input type="text" placeholder="Enter City" mb="2rem"   _focus={{
+                      outline: "none",
+                    }} onChange={changeHandler} value={city} />
+<Button  size="md"
+                    mt="0.5rem"
+                    height="48px"
+                    width="100%"
+                    border="0px"
+                    color="white"
+                    bg="#fde8f4"
+                    _hover={{ bg: "rgba(253, 232, 244)" }}
+                    _focus={{
+                      outline: "none",
+                    }} type="submit">Search</Button>
                 </form>
             </div>
         </div>

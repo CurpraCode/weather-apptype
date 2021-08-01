@@ -4,6 +4,7 @@ import {RootState} from "../store";
 import Search from "../components/Search";
 import Alert from "../components/Alert";
 import Weather from "../components/Weather";
+import {Spinner} from "@chakra-ui/react";
 // import {setAlert} from "../store/actions/alertActions";
 // import { setError } from '../store/actions/weatherActions';
 
@@ -17,7 +18,7 @@ const WeatherPage: FC = () => {
         <div>
             <div className="has-text-centered">
       <Search title="Enter city name and press search button" />
-      {loading ? <h2 className="is-size-3 py-2">Loading...</h2> : weatherData && <Weather data={weatherData} />}
+      {loading ? <Spinner color="red.500" /> : weatherData && <Weather data={weatherData} />}
 
       {alertMsg && <Alert message={alertMsg} />}
       {error && <Alert message={error}  />}
