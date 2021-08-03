@@ -11,7 +11,8 @@ const Weather: FC<WeatherProps> = ({data}) => {
     const fahrenheit = (data.main.temp * 1.8 - 459.67).toFixed(2);
     const celsius = (data.main.temp - 273.15).toFixed(2);
     return (
-        <Box mr={{base:"1rem", md:"1rem"}} ml={{base:"1rem", md:"1rem"}} bg="rgb(7, 156, 251)" borderRadius="1.5rem" mb="2rem" p="1rem 0rem" color="#fff" maxWidth="600px" m="0 auto">
+      <Box maxWidth="600px" m="0 auto">
+        <Box  mr={{base:"1rem", md:"1rem"}} ml={{base:"1rem", md:"1rem"}} bg="rgb(7, 156, 251)" borderRadius="1.5rem" mb="2rem" p="1rem 0rem" color="#fff">
         <Text textAlign="center" as="h1" fontWeight="bold" mb="1rem" >{data.name} - {data.sys.country}</Text>
         <div>
           <Box>
@@ -19,7 +20,7 @@ const Weather: FC<WeatherProps> = ({data}) => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 2, duration: 1.2 }}>
 <Text textAlign="center">{data.weather[0].description}</Text>
-              <Box maxWidth="50px" m="0 auto" w="100%">
+              <Box maxWidth="50px" m="0 auto">
               <Image src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} alt=""/>
               </Box>
            </MotionBox>
@@ -68,6 +69,7 @@ const Weather: FC<WeatherProps> = ({data}) => {
           </Box>
           </Flex>
         </div>
+        </Box>
         </Box>
     )
 }
