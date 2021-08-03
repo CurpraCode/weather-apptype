@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 const Header: FC = ()=>{
     return(
-<Box maxWidth="990px" m="0 auto"> 
+<Box maxWidth="990px" m="0 auto" mr={{base:"1rem", md:"0.5rem"}} ml={{base:"1rem", md:"0.5rem"}}> 
     <Flex  justifyContent="space-between" alignItems="center" mt="3rem">
     <Link to="/">
         <Text fontSize="1.8rem" fontWeight="bold">W <Text as="span" color="#f2f">T</Text> <Text as="span" color="#55a7ff">A</Text> </Text>
