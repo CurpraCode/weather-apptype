@@ -9,7 +9,7 @@ const LandingPage: FC = () => {
         <Box>
             <Header/>
             <Flex mt="5rem" flexDir={{ base: 'column', md: 'row' }} maxWidth="990px" m="0 auto" justifyContent={{ base: 'space-around', md: 'space-between' }} alignItems={{ base: 'flex-start', md: 'center' }}>
-            <Box  mr={{base:"1rem", md:"0.5rem"}} ml={{base:"1rem", md:"0.5rem"}}>
+            <Box  mr={{base:"1rem", md:"1rem"}} ml={{base:"1rem", md:"1rem"}}>
                 <Text as="p" opacity="0.8" mb="2rem" mt="2rem">OPEN SEASON</Text>
                 <Text as="h1" fontSize="4rem" fontWeight="bold" mb="2rem">Weather <br/>
                 Forecast</Text>
