@@ -7,8 +7,8 @@
   width: 50px;
   margin: -25px 0 0 -25px;
   border: 2px solid transparent;
-  border-top-color: #000000;
-  box-shadow: 0 0 5px skyblue;
+  border-top-color:rgb(7, 156, 251);
+  box-shadow: 0 0 5px #f3f;
   border-radius: 50%;
   -webkit-animation: spin9 1.5s ease infinite;
           animation: spin9 1.5s ease infinite;
@@ -23,8 +23,8 @@
   left: 7px;
   border: 2px solid transparent;
   border-radius: 50%;
-  border-top-color: #000000;
-  box-shadow: 0 0 5px skyblue;
+  border-top-color: rgb(7, 156, 251);
+  box-shadow: 0 0 5px #f3f;
   -webkit-animation: spin9_x 1s linear infinite;
           animation: spin9_x 1s linear infinite;
 }
@@ -38,8 +38,8 @@
   left: 15px;
   border: 2px solid transparent;
   border-radius: 50%;
-  border-top-color: #000000;
-  box-shadow: 0 0 5px skyblue;
+  border-top-color:rgb(7, 156, 251);
+  box-shadow: 0 0 5px #f3f;
   -webkit-animation: spin9 1.5s linear infinite;
           animation: spin9 1.5s linear infinite;
 }
