@@ -14,7 +14,7 @@ const LandingPage: FC = () => {
                 <Text as="h1" fontSize={{base:"3.4rem",md:"4rem"}} fontWeight="bold" mb={{base:"0.7rem",md:"2rem"}}>Weather <br/>
                 Forecast</Text>
                 <Link to="/weather">
-                <Button bg="#f3f" color="#fff"  padding="1.2rem;" boxShadow="0 1rem 3rem -1rem #484848" borderRadius="2.5rem" mt={{base:"1.5rem",md:"3rem"}} _hover={{ bg: "#f3f" }}>Discover</Button>
+                <Button bg="#f3f" color="#fff"  padding="1.2rem;" height="45px" width="130px"  boxShadow="0 1rem 3rem -1rem #484848" borderRadius="2.5rem" mt={{base:"1.5rem",md:"3rem"}} _hover={{ bg: "#f3f" }}>Discover</Button>
         </Link>
            
             </Box>

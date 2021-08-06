@@ -11,7 +11,7 @@ const Weather: FC<WeatherProps> = ({data}) => {
     const fahrenheit = (data.main.temp * 1.8 - 459.67).toFixed(2);
     const celsius = (data.main.temp - 273.15).toFixed(2);
     return (
-      <Box maxWidth="600px" m="0 auto">
+      <Box maxWidth="600px" m="0 auto" mt="4rem">
         <Box  mr={{base:"1rem", md:"1rem"}} ml={{base:"1rem", md:"1rem"}} bg="rgb(7, 156, 251)" borderRadius="1.5rem" mb="2rem" p="1rem 0rem" color="#fff">
         <Text textAlign="center" as="h1" fontWeight="bold" mb="1rem" >{data.name} - {data.sys.country}</Text>
         <div>
