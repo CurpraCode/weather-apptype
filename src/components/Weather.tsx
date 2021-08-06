@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import {WeatherData} from "../store/types";
-import {Box , Flex, Image} from "@chakra-ui/react";
+import {Box , Flex, Image, Text} from "@chakra-ui/react";
 import {MotionBox} from "../components/animation/FramerElement";
 
 interface WeatherProps{

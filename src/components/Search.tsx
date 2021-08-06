@@ -2,7 +2,7 @@ import {FC, useState, FormEvent} from 'react';
 import {useDispatch} from "react-redux";
 import {setAlert} from "../store/actions/alertActions";
 import { getWeather, setLoading } from '../store/actions/weatherActions';
-import {Input, Text, IconButton, Box} from "@chakra-ui/react";
+import {Input, IconButton, Box} from "@chakra-ui/react";
 import {SearchIcon} from "@chakra-ui/icons";
 interface SearchProps{
     title: string;
