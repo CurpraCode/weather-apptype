@@ -6,9 +6,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+  background:transparent !important;
+}
+html{
+  background-image:url("https://wallpaperdrive.com/images/2019/10/Windy-Weather-680x425.jpeg");
+   background-size: cover;
+   background-repeat:no-repeat;
+   /* height:100vh; */
 }
 
 *{
-  font-family: "Nunito Sans", sans-serif
+  font-family: "Nunito Sans", sans-serif;
 }
+

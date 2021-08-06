@@ -6,7 +6,7 @@ import  weather from "../assets/weather.svg";
 
 const LandingPage: FC = () => {
     return (
-        <Box>
+        <Box bg="transparent" color="#fff">
             <Header/>
             <Flex mt="5rem" flexDir={{ base: 'column', md: 'row' }} maxWidth="990px" m="0 auto" justifyContent={{ base: 'space-around', md: 'space-between' }} alignItems={{ base: 'flex-start', md: 'center' }}>
             <Box  mr={{base:"1rem", md:"1rem"}} ml={{base:"1rem", md:"1rem"}} mb="2rem">
