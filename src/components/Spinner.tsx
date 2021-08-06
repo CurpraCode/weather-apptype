@@ -3,8 +3,9 @@ import "./Spinner.css"
 
 const Spinner = () => {
     return (
-        <div className="col-sm-2">
-            <div id="nest3"></div>	
+        <div>
+            <div id="nest3"></div>
+            
         </div>
     )
 }

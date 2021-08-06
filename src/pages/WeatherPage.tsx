@@ -17,9 +17,9 @@ const WeatherPage: FC = () => {
     const error = useSelector((state: RootState)=> state.weather.error)
     const alertMsg = useSelector((state: RootState)=>state.alert.message)
     return (
-        <Box bg="transparent" height="100vh">
+        <Box  height="100vh">
                  <Header/>
-            <Box mt="6rem">
+            <Box mt="4rem">
       <Search title="Enter Region name and press search button" />
       {loading ? <Spinner /> : weatherData && <Weather data={weatherData} />}
 
