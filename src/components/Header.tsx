@@ -10,7 +10,7 @@ const Header: FC = ()=>{
         <Text fontSize="1.8rem" fontWeight="bold">W <Text as="span" color="#f2f">T</Text> <Text as="span" color="#55a7ff">A</Text> </Text>
         </Link>
         <Link to="/weather">
-        <Button bg="#f3f" color="#fff"  padding="1.2rem;" boxShadow="0px 5px 5px rgb(75 93 104 / 10%);" borderRadius="2.5rem" _hover={{ bg: "#f3f" }}>Discover</Button>
+        <Button bg="#f3f" color="#fff"  padding="1.2rem 3rem" boxShadow="0 1rem 3rem -1rem #484848" borderRadius="2.5rem" width="130px" _hover={{ bg: "#f3f" }}>Discover</Button>
         </Link>
     </Flex>
 </Box>

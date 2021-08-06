@@ -25,23 +25,27 @@ const Search: FC<SearchProps> = ({title}) => {
      }
     return (
         <Box>
-            <Box textAlign="center">
-                <Text>{title}</Text>
-                <form onSubmit={submitHandler}>
-<Input type="text" placeholder="Enter Region" mb="2rem" width="40%"  _focus={{
+            <Box textAlign="center" >
+                {/* <Text>{title}</Text> */}
+                <Box bg="#fff" maxWidth="700px" m="0 auto" boxShadow="0 1rem 3rem -1rem #484848"  pt="0.7rem" height="80px" border="0rem solid #000" borderRadius="5rem">
+                <form onSubmit={submitHandler} >
+<Input type="text" placeholder="Enter Region" mb="2rem" width="80%" height="50px" border="none"   _focus={{
                       outline: "none",
                     }} onChange={changeHandler} value={city} />
-<IconButton  size="md"
+<IconButton  size="lg"
 aria-label="Search database"
-                    border="0px"                    
+                    border="0px" 
+                    borderRadius="2rem"                   
                     color="white"
                     icon={<SearchIcon/>}
                     bg="#f3f"
+                    ml="2rem"
                     _hover={{ bg: "#f3f" }}
                     _focus={{
                       outline: "none",
                     }} type="submit"/>
                 </form>
+                </Box>
             </Box>
         </Box>
     )
